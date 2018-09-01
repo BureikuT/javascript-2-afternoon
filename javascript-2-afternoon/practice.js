@@ -46,7 +46,7 @@ let favoriteThings = {
 */
 
 favoriteThings.car = "Challenger";
-FocusNavigationEvent.brand = "Toyota";
+favoriteThings.brand = "Toyota";
 
 
 
@@ -54,7 +54,7 @@ FocusNavigationEvent.brand = "Toyota";
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-favoriteThings.food = "Chicken Nugges";
+favoriteThings.food = "Chicken Nuggets";
 favoriteThings.book = "Harry Potter";
 
 
@@ -70,7 +70,7 @@ favoriteThings.book = "Harry Potter";
 
 let backPack = {};
 
-var item = 'first pocket';
+var item = 'firstPocket';
 backPack[item] = 'chapstick';
 backPack.color = 'black';
 
@@ -112,7 +112,7 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-user2.name = "Tyler S McGinnis";
+user2.name = "Tyler S. McGinnis";
 user2.email = 'tyler.mcginnis@devmounta.in';
 
 
@@ -166,7 +166,7 @@ methodCollection.logHello;
   Return a new object with all of the information that you passed in.
 */
 
-function makePerson() {
+function makePerson(name,birthday,ssn) {
   return {
     name:name,
     birthday:birthday,
@@ -183,7 +183,7 @@ function makePerson() {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-function makeCard() {
+function makeCard(cardNumber,expirationDate,securityCode) {
   return{
     cardNumber:cardNumber,
     expirationDate:expirationDate,

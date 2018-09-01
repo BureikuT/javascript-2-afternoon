@@ -14,11 +14,12 @@
   Then alert your name using dot notation.
 */
 
-var me = {
-  name: "Ian",
+let me = {
+  name: 'Ian',
   age: 26,
+
 }
-alert  (me.name);
+alert (me.name)
 
 
 
@@ -28,16 +29,15 @@ alert  (me.name);
   Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. 
   Have the values to those keys be your favorite thing in that category.
 */
-var favoriteThings = {
+
+let favoriteThings = {
   band: "Ali Project",
-  food: "Japanese Curry",
+  food: "Curry",
   person: "Mom",
   book: "Neon Genesis Evagelion",
   movie: "Hairspray",
   holiday: "Christmas"
-
 }
-
 
 
 
@@ -46,7 +46,7 @@ var favoriteThings = {
 */
 
 favoriteThings.car = "Challenger";
-favoriteThings.brand = "Toyota",
+favoriteThings.brand = "Toyota";
 
 
 
@@ -56,7 +56,6 @@ favoriteThings.brand = "Toyota",
 
 favoriteThings.food = "Chicken Nuggets";
 favoriteThings.book = "Harry Potter";
-
 
 
 ////////// PROBLEM 3 //////////
@@ -69,21 +68,18 @@ favoriteThings.book = "Harry Potter";
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
-var backPack = {};
+let backPack = {};
 
-var item = "firstPocket";
-backPack[item] = "chapstick";
-
-backPack.color = "blue";
-
-
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'black';
 
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-alert (backPack);
+alert(backPack);
 
 
 
@@ -93,7 +89,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-console.log(backPack);
+console.log (backPack);
 
 
 
@@ -117,7 +113,7 @@ var user2 = {
 */
 
 user2.name = "Tyler S. McGinnis";
-user2.email = "tyler.mcginnis@devmounta.in";
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -140,7 +136,7 @@ user2.email = "tyler.mcginnis@devmounta.in";
   Create an empty object called methodCollection.
 */
 
-var methodCollection = {}; 
+let methodCollection = {};
 
 
 
@@ -149,9 +145,8 @@ var methodCollection = {};
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-methodCollection.alertHello = function (){alert ("hello")};
-methodCollection.logHello = function (){console.log("hello")};
-
+methodCollection.alertHello = function(){ return alert ("hello")};
+methodCollection.logHello = function() {return console.log("hello")};
 
 
 
@@ -171,11 +166,11 @@ methodCollection.logHello;
   Return a new object with all of the information that you passed in.
 */
 
-function makePerson (name,birthday,ssn){
-  return{
+function makePerson(name,birthday,ssn) {
+  return {
     name:name,
     birthday:birthday,
-    ssn:ssn,
+    ssn:ssn
   }
 }
 
@@ -188,11 +183,13 @@ function makePerson (name,birthday,ssn){
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-function makeCard (cardNumber,expirationDate,securityCode){
+function makeCard(cardNumber,expirationDate,securityCode) {
   return{
     cardNumber:cardNumber,
     expirationDate:expirationDate,
-    securityCode:securityCode
+    securityCode:securityCode,
+
   }
 }
+
 
